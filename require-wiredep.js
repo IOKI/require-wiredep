@@ -41,6 +41,7 @@ function require_wiredep(opts) {
     ('detectable-file-types', [])
     ('file-types', mergeFileTypesWithDefaults(opts.fileTypes))
     ('src', [])
+    ('generateFile', opts.generateFile || [])
     ('stream', opts.stream ? opts.stream : {})
     ('warnings', []);
 
